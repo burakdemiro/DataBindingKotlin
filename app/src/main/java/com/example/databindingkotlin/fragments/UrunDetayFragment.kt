@@ -21,6 +21,7 @@ class UrunDetayFragment : Fragment() {
         var denemeUrun = TumUrunler()
 
         binding.urun = denemeUrun.tumUrunlerDizisi[1]
+        binding.miktar = 5
         return binding.root // root layoutu döndürür
     }
 

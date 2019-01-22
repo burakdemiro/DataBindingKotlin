@@ -46,7 +46,11 @@ class Urun(val baslik:String, val aciklama:String,
     }
 
     fun indirimVarMi(): Boolean {
-
         return kampanyaliFiyat > 0
     }
+
+    fun miktarToString(miktar: Int): String {
+        return "Ürün miktarı: $miktar"
+    }
+
 }

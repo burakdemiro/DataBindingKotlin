@@ -9,6 +9,7 @@
         <import type="com.example.databindingkotlin.models.Urun"/>
         <import type="android.view.View"/>
         <variable name="urun" type="Urun"/>
+        <variable name="miktar" type="Integer"/>
 
     </data>
 
@@ -103,7 +104,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:text="Miktar: 1"
+            android:text="@{urun.miktarToString(miktar)}"
             app:icon="@drawable/ic_urun_ekle"
             style="@style/Widget.MaterialComponents.Button.OutlinedButton.Icon"
             app:layout_constraintStart_toStartOf="@+id/tvFiyat"

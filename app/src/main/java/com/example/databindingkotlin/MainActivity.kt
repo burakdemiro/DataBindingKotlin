@@ -21,5 +21,10 @@ class MainActivity : AppCompatActivity() {
         var transaction = supportFragmentManager.beginTransaction()
         transaction.replace(binding.anaContainer.id, urunDetayFragment, "urunDetayFragment")
         transaction.commit()
+
+        /*var mainFragment = MainFragment()
+        var transaction = supportFragmentManager.beginTransaction()
+        transaction.replace(binding.anaContainer.id, mainFragment, "mainFragment")
+        transaction.commit()*/
     }
 }
